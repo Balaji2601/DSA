@@ -14,7 +14,7 @@ class Graph:
         return adj
 
 if __name__ == "__main__":
-    n = 4
+    n = 4 # no of vetices
     edges = [[1, 0], [2, 0], [2,1], [3,1]]
 
     practice_graph = Graph(n, edges)

@@ -11,7 +11,7 @@ class Solution:
                 if color[v] == color[u]: # If color of adj v node is same as u node then it is not a bipartite graph
                     return False
                 if color[v] == -1: # If color[v] == -1 meaning v is not visited then we have to dfs on that
-                    color_of_v = 1 - currColor
+                    color_of_v = 1 - currColor # Giving the neighbour v the opposite colour of the current node u.
                     if check_bipartite_DFS(adj, v, color, color_of_v) == False:
                         return False
 

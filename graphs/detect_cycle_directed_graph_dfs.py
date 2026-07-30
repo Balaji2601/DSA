@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+
 from collections import defaultdict
 
 class Solution:

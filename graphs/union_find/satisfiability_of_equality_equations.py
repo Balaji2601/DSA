@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/satisfiability-of-equality-equations/
+
 from typing import List
 
 

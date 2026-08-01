@@ -1,5 +1,8 @@
 # https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/
 
+from typing import List
+
+
 class Solution:
     def makeConnected(self, n: int, connections: List[List[int]]) -> int:
 

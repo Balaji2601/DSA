@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/count-the-number-of-complete-components/description/
+
 #DSU
 from collections import defaultdict
 from typing import List

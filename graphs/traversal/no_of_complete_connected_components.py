@@ -26,7 +26,8 @@ class Solution:
             if not visited[i]:
                 values = [0, 0]
                 dfs(adj, i, visited, values)
-
+                # values[0] -> no of edges in this component
+                # values[1] -> no of vertices in this component
                 values[0] = values[0] // 2
                 values[1] = (values[1]) * (values[1] - 1) // 2
 

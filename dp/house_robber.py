@@ -1,5 +1,10 @@
 # https://leetcode.com/problems/house-robber/description/
 
+# Intution: You have two choices to choose at ith house
+# 1. Steal the current house
+# 2. Skip the current house
+# If you choose 1: You must have to skip the i+1th house and go to i+2th house
+# If you choose 2: As you skipped the current house you are allowed to go i+1th house 
 from typing import List
 
 

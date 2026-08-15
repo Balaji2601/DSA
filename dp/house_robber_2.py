@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/house-robber-ii/
-
+# Intuition: Same approach as house robber 1 but with circular condition
+# To solve the circular trick
+# 1. We use the solve function first by stealing 1st house and skipping last house
+# 2. We skip the first house and steal at the last
+# And get maximum between the two approaches.
 from typing import List
 
 

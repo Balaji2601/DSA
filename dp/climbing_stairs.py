@@ -1,4 +1,11 @@
 # https://leetcode.com/problems/climbing-stairs/
+# Intution1: You have two choices at ith stair
+# 1. You can go i+1th stair
+# 2. You can go i+2th stair
+# Intution2: Reverse thinking
+# You are at ith stair
+# 1. You came here from i-1th stair
+# 2. You came here from i-2th stair
 
 # brute force
 class Solution:

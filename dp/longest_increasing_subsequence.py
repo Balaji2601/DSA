@@ -29,3 +29,17 @@ class Solution:
 
         return solve(0,-1)
 
+# bottom up
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        n = len(nums)
+        dp = [1]*(n+1)
+
+        maxLIS = 0
+        for i in range(0, n):
+            for j in range(0, i):
+                if nums[j] < nums[i]:
+                    dp[i] = max(1+dp[j], dp[i])
+                    maxLIS = max(maxLIS, dp[i])
+
+        return maxLIS

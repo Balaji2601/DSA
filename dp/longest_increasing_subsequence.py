@@ -35,7 +35,9 @@ class Solution:
         n = len(nums)
         dp = [1]*(n+1)
 
-        maxLIS = 0
+        maxLIS = 1
+        # for every nums[i] check if nums[j] < nums[i]
+        # if the condition is satisfied we need to update the dp[i] as max(1+dp[j], dp[i])
         for i in range(0, n):
             for j in range(0, i):
                 if nums[j] < nums[i]:

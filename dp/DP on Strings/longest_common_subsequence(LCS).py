@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/longest-common-subsequence/description/
+
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         n1 = len(text1)

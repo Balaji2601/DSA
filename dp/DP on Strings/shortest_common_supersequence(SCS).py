@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/problems/shortest-common-supersequence0322/1
+
 # recursion
 class Solution:
     def minSuperSeq(self, s1, s2):

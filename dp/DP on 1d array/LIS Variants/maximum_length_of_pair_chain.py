@@ -6,6 +6,7 @@ from typing import List
 class Solution:
     def findLongestChain(self, pairs: List[List[int]]) -> int:
         n = len(pairs)
+        # sort by 1st value of each pair
         pairs.sort()
         dp = [[-1]*(n+1) for _ in range(n+1)]
         def solve(i, prev):
@@ -31,8 +32,9 @@ class Solution:
 class Solution:
     def findLongestChain(self, pairs: List[List[int]]) -> int:
         n = len(pairs)
+        # sort by 1st value of each pair
         pairs.sort()
-        dp = [1]*(n+1)
+        dp = [1]*n
 
         longestChain = 1
         for i in range(n):

@@ -7,6 +7,7 @@ from typing import List
 class Solution1:
     def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
         n = len(nums)
+        # sort in ascending order
         nums.sort()
         def solve(curr_idx, prev_val, temp, result):
             if curr_idx >= n:
@@ -61,6 +62,7 @@ class Solution:
 
 class Solution2:
     def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
+        # sort in ascending order
         nums.sort()
         n = len(nums)
         dp = [1]*n

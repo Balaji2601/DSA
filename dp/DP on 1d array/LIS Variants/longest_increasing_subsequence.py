@@ -33,7 +33,7 @@ class Solution:
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         n = len(nums)
-        dp = [1]*(n+1)
+        dp = [1]*n
 
         maxLIS = 1
         # for every nums[i] check if nums[j] < nums[i]

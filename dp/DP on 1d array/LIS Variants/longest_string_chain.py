@@ -6,6 +6,7 @@ from typing import List
 class Solution:
     def longestStrChain(self, words: List[str]) -> int:
         n = len(words)
+        # sort by length of each word
         words.sort(key = lambda x:len(x))
         
         def check(a,b):
@@ -43,6 +44,7 @@ class Solution:
 class Solution:
     def longestStrChain(self, words: List[str]) -> int:
         n = len(words)
+        # sort by length of each word
         words.sort(key = lambda x:len(x))
 
         def check(a,b):
@@ -54,7 +56,7 @@ class Solution:
                 i += 1
             return False
 
-        dp = [1]*(n+1)
+        dp = [1]*n
 
         ans = 1
 

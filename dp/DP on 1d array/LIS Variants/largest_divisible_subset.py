@@ -2,6 +2,8 @@
 
 from typing import List
 
+# recursion + memoization
+# with passing previous value
 class Solution1:
     def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
         n = len(nums)
@@ -27,6 +29,34 @@ class Solution1:
         
         solve(0, -1, temp, result)
 
+        return result
+
+# recursion + memoization
+# with passing previous idx
+class Solution:
+    def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        nums.sort()
+        def solve(curr_idx, prev_idx, temp, result):
+            if curr_idx >= n:
+                if len(temp) > len(result):
+                    result[:] = temp[:]
+                return
+            
+            if prev_idx == -1 or nums[curr_idx] % nums[prev_idx] == 0:
+                temp.append(nums[curr_idx])
+                # choose
+                solve(curr_idx+1, curr_idx, temp, result)
+                temp.pop()
+            
+            # skip
+            solve(curr_idx+1, prev_idx, temp, result)
+
+
+        temp = []
+        result = []
+        
+        solve(0, -1, temp, result)
         return result
 
 class Solution2:

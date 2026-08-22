@@ -50,6 +50,34 @@ class Solution1:
 
         return solve(0,0)
 
+# recursion + memoization with length 
+# starting at n1, n2 length reducing length in recursion
+class Solution:
+    def minDistance(self, word1: str, word2: str) -> int:
+        n1 = len(word1)
+        n2 = len(word2)
+
+        dp = [[-1]*(n2+1) for _ in range(n1+1)]
+
+        def solve(m,n):
+            if m == 0 or n == 0:
+                return m+n
+            if dp[m][n] != -1:
+                return dp[m][n]
+
+            if word1[m-1] == word2[n-1]:
+                dp[m][n] = solve(m-1,n-1)
+                return solve(m-1,n-1)
+            else:
+                insert_operation = 1+solve(m,n-1)
+                delete_operation = 1+solve(m-1,n)
+                replace_operation = 1+solve(m-1,n-1)
+            
+            dp[m][n] = min(insert_operation, delete_operation, replace_operation)
+            return min(insert_operation, delete_operation, replace_operation)
+        
+        return solve(n1,n2)
+
 # recursion + memoization with explanation
 class Solution2:
     def minDistance(self, word1: str, word2: str) -> int:

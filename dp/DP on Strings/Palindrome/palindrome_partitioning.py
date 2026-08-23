@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/palindrome-partitioning/description/
 
+# print
+
 from typing import List
 
 # DP + Backtracking

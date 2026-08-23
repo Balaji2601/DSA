@@ -3,6 +3,7 @@
 from bisect import bisect_left
 from typing import List
 
+# We can print LIS using this patience sorting algorithm
 
 class Solution:
     def longestLIS(self, nums: List[int]) -> int:

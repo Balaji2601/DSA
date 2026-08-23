@@ -1,5 +1,8 @@
 # https://leetcode.com/problems/longest-common-subsequence/description/
 
+# print
+
+
 class Solution:
     def print_longestCommonSubsequence(self, text1: str, text2: str) -> int:
         m = len(text1)

@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/shortest-common-supersequence/description/
 
+# print
+
 class Solution:
     def print_SCS(self, str1, str2):
         m = len(str1)

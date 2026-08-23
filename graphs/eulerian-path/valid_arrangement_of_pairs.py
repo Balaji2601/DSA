@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/valid-arrangement-of-pairs/description/
 
+# print
+
 from collections import defaultdict
 from typing import List
 

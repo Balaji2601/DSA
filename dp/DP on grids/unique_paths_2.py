@@ -7,7 +7,9 @@ class Solution1:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         m = len(obstacleGrid)
         n = len(obstacleGrid[0])
+        
         dp = [[-1]*n for _ in range(m)]
+
         def solve(i,j):
             if i >= m or j >= n or obstacleGrid[i][j] == 1:
                 return 0

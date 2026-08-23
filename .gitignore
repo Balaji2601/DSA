@@ -20,3 +20,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Nested repo (has its own .git)
+leetcode-companywise-interview-questions/

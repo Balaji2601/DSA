@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/find-a-safe-walk-through-a-grid/
 # https://www.youtube.com/watch?v=ZIFAFLARoLs
+# matrix
 
 from collections import deque
 from typing import List

@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/island-perimeter/
+# matrix
 
-# matrix solution
 class Solution:
     def islandPerimeter(self,grid):
         rows = len(grid)

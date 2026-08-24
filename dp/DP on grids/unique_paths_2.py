@@ -2,12 +2,14 @@
 
 from typing import List
 
-
+# if there is a obstacle when we check bound introduced 
+# obstacleGrid[i][j] == 1 means if there is a obstacle 
+# we return 0 means this path going from (0,0) to (m-1,n-1)
 class Solution1:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         m = len(obstacleGrid)
         n = len(obstacleGrid[0])
-        
+
         dp = [[-1]*n for _ in range(m)]
 
         def solve(i,j):

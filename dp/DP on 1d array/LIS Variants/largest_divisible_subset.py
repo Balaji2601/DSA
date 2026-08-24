@@ -6,6 +6,7 @@ from typing import List
 
 # recursion + memoization
 # with passing previous value
+# backtracking
 class Solution1:
     def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
         n = len(nums)

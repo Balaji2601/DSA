@@ -2,6 +2,7 @@
 
 from typing import List
 
+# brute force
 # O(m*n*n)
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
@@ -21,6 +22,7 @@ class Solution:
         return max(dp[m-1])
 
 
+# optimal solution
 # O(m*n)
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:

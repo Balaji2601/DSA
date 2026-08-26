@@ -23,3 +23,6 @@ Thumbs.db
 
 # Nested repo (has its own .git)
 leetcode-companywise-interview-questions/
+
+
+.claude/

@@ -14,6 +14,7 @@ class Solution:
             if (n,W) in dp:
                 return dp[(n,W)]
 
+            # if we find a true anywhere we return it instantly
             if solve(n-1,W-arr[n-1]):
                 dp[(n,W)] = True
                 return True

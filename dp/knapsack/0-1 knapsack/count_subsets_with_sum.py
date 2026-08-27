@@ -8,7 +8,7 @@ class Solution:
 
         @cache
         def solve(i, target):
-            # we are not returning when we reach target
+            # we are not returning when we reach target ie if target == 0
             # as the constraints include 0 as well so we go till end of every subset and check if target = 0 
             # if target is zero we return 1 as we found a way.
             if i == n:

@@ -51,7 +51,7 @@ class Solution:
         return result
 
 # Backtracking
-
+# Without optimization of palindrome check
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
         n = len(s)

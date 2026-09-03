@@ -34,6 +34,7 @@ class Solution:
             return 0
 
         dp = [[-1]*(n+1) for _ in range(n+1)]
+        # solve(i,j) -> gives output min no of cuts required to make a string s[i:j] j inclusive
         def solve(i,j):
             if i >= j:
                 return 0
@@ -54,6 +55,7 @@ class Solution:
         return solve(0,n-1)
 
 # recursion + memoization with palidrome check with bottom up(blue print)
+# TLE in leetcode
 class Solution:
     def minCut(self, s: str) -> int:
         n = len(s)
@@ -74,6 +76,7 @@ class Solution:
         
 
         dp = [[-1]*(n+1) for _ in range(n+1)]
+        # solve(i,j) -> gives output min no of cuts required to make a string s[i:j] j inclusive
         def solve(i,j):
             if i >= j:
                 return 0
